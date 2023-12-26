@@ -27,3 +27,9 @@ PRODUCT_PACKAGES += \
     fsck.f2fs.vendor_ramdisk \
     resize2fs.vendor_ramdisk \
     tune2fs.vendor_ramdisk
+
+# For dedicated recovery partitions, we need to include fs tools
+PRODUCT_PACKAGES += \
+    e2fsck.recovery \
+    resize2fs.recovery \
+    tune2fs.recovery
